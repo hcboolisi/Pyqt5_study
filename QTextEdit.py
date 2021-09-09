@@ -46,11 +46,11 @@ class TextEdit(QWidget):
     def onclickbtntext(self):
         # QFont,第一个参数是字体，第二个是字体大小，
         # 第三个是字体宽度（粗细），第四个是设置斜体
-        self.textedit.setFont(QFont('宋体', 16, 100, True))
+        # self.textedit.setFont(QFont('宋体', 16, 100, True))
         self.textedit.setPlainText('Hello Word ! 你好世界！')
 
     def onclickbtnHTML(self):
-        self.textedit.setFont(QFont())
+        # self.textedit.setFont(QFont())
         self.textedit.setHtml('<font color="blue" size="8">Hello World!</font>')
 
 
