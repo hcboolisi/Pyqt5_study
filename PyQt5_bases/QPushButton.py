@@ -22,7 +22,7 @@ class PushButton(QDialog):
 
         # 两种设置按钮图标的方法
         # self.btn2.setIcon(QIcon('图标_1.jpg'))
-        self.btn2.setIcon(QIcon(QPixmap('图标_1.jpg')))
+        self.btn2.setIcon(QIcon(QPixmap('../图标_1.jpg')))
 
         self.btn3 = QPushButton('不可用的按钮')  # 另一种设置按钮文本（名字）的方法
         self.btn3.setEnabled(False)   # 设置按钮不可以用

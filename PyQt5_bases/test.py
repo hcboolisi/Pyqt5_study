@@ -26,7 +26,7 @@ class Example(QWidget):
         qbtn.move(50, 50)   # 设置按钮的位置
 
         self.setGeometry(300, 300, 800, 600)    # 设置窗口的大小，位置
-        self.setWindowIcon(QIcon('图标.jpg'))    # 设置窗口图标，注意写法和需要导入的相关库
+        self.setWindowIcon(QIcon('../图标.jpg'))    # 设置窗口图标，注意写法和需要导入的相关库
         self.setWindowTitle('退出按钮')     # 设置窗口标题
         self.setToolTip('这是一个窗口')   # 设置窗口提示信息
         self.show()

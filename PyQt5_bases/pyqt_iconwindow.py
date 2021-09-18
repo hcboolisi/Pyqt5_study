@@ -21,7 +21,7 @@ class IconWindow(QWidget):
     def initUI(self):
         self.setGeometry(300, 300, 800, 600)  # 设置窗口的位置和大小，等同于resize和move两个方法
         self.setWindowTitle('带有图标的窗口')  # 设置窗口的图标
-        self.setWindowIcon(QIcon('图标.jpg'))  # 设置窗口的图标，图标可以使用绝对路径和相对路径，此为相对路径
+        self.setWindowIcon(QIcon('../图标.jpg'))  # 设置窗口的图标，图标可以使用绝对路径和相对路径，此为相对路径
 
         self.show()  # show方法用于在屏幕上展示窗口
 
