@@ -20,7 +20,7 @@ class ClipBoard(QWidget):
 
         self.textlabel = QLabel('默认文本')
         self.imagelabel = QLabel()
-        self.imagelabel.setPixmap(QPixmap('../图标.jpg'))
+        self.imagelabel.setPixmap(QPixmap('../Image/图标.jpg'))
 
         layout = QGridLayout()
         layout.addWidget(self.copytextbtn, 0, 0)
@@ -64,7 +64,7 @@ class ClipBoard(QWidget):
 
     def copyimage(self):
         clipboard = QApplication.clipboard()
-        clipboard.setPixmap(QPixmap('../图标.jpg'))
+        clipboard.setPixmap(QPixmap('../Image/图标.jpg'))
 
     def pasteimage(self):
         clipboard = QApplication.clipboard()

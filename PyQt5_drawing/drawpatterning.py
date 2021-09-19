@@ -51,7 +51,7 @@ class DrawPatterning(QWidget):
         # painter.drawPolygon(p1, p2, p3, p4, p5)
 
         # 绘制图像
-        image = QImage('../图标.jpg')
+        image = QImage('../Image/图标.jpg')
         rect = QRect(10, 600, int(image.width()/2), int(image.height()/2))  # 这里图像的宽高，除以2后可能会得到一个浮点数，运行是会出错
                                                                             # 所有转换一下，直接转换成整数。
         # rect = QRect(10, 600, 200, 200)

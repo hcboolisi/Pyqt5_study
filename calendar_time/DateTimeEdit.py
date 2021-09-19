@@ -15,6 +15,7 @@ class DateTimeEdit(QWidget):
 
         datetimeedit1 = QDateTimeEdit()
         datetimeedit2 = QDateTimeEdit(QDateTime.currentDateTime())
+        datetimeedit2.setCalendarPopup(True)
 
         dateedit = QDateTimeEdit(QDate.currentDate())
         timeedit = QDateTimeEdit(QTime.currentTime())

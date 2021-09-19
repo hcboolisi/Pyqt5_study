@@ -28,7 +28,7 @@ class LabelWidget(QMainWindow):
 
         label3.setAlignment(Qt.AlignCenter)
         label3.setToolTip('这是一个图片标签')
-        label3.setPixmap(QPixmap('../图标.jpg'))
+        label3.setPixmap(QPixmap('../Image/图标.jpg'))
 
         label4.setText("<a href='https://www.baidu.com/'>点击打开百度网站</a>")
         label4.setAlignment(Qt.AlignRight)

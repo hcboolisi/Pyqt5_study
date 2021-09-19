@@ -23,7 +23,7 @@ class tooltip_w(QWidget):
 
         self.setGeometry(300, 300, 800, 600)  # 设置窗口的位置大小
         self.setWindowTitle('主窗口')  # 设置窗口的标题
-        self.setWindowIcon(QIcon('../图标.jpg'))  # 设置窗口的图标
+        self.setWindowIcon(QIcon('../Image/图标.jpg'))  # 设置窗口的图标
         self.show()  # 在屏幕中展示窗口
 
 if __name__ == '__main__':
