@@ -1,5 +1,6 @@
 import sys
 
+from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
@@ -16,6 +17,7 @@ class ScrollBar(QMainWindow):
         self.label = QLabel('拖动滚动条控制文本的颜色')
 
         self.scroll1 = QScrollBar()
+        # self.scroll1.setOrientation(Qt.Horizontal)  # 设置为水平方向
         self.scroll1.setMaximum(255)
         self.scroll1.sliderMoved.connect(self.slider)
 
