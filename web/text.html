@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text</title>
+    <script>
+        function fullName(value) {
+            alert("<" + value + ">")
+            var firstname = document.getElementById('firstName').value;
+            var lastname = document.getElementById('lastName').value;
+            var fullname = firstname + ' ' + lastname;
+            document.getElementById('fullName').value = fullname;
+            document.getElementById('submit-btn').style.display = 'block';
+            return fullname;}
+    </script>
+</head>
+<body>
+    <form>
+        <label>firstName:</label>
+        <input type="text" name="firstName" id="firstName"></input>
+        <br/>
+        <label>lastName:</label>
+        <input type="text" name="lastName" id="lastName"></input>
+        <br/>
+        <label>fullName:</label>
+        <input type="text" name="fullName" id="fullName"></input>
+        <br/>
+        <input style="display:None;" type="submit" id="submit-btn" />
+    </form>
+</body>
+</html>
