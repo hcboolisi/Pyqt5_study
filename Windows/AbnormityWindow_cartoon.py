@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtGui import QPixmap, QCursor
+from PyQt5.QtGui import QPixmap, QCursor, QPainter
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtWidgets import QWidget, QApplication
 
@@ -48,6 +48,16 @@ class AbnormityWindowCartoon(QWidget):
     def mouseReleaseEvent(self, event):
         self.m_Drag = False
         self.setCursor(QCursor(Qt.ArrowCursor))
+
+    # 这个paintEvent事件不要，也能显示图像效果。
+    def paintEvent(self, event):
+        painter = QPainter()
+        painter.drawPixmap(0, 0, self.pix.width(), self.pix.height(), self.pix)
+
+    def mouseDoubleClickEvent(self, event):
+        if event.button() == 1:
+            self.i += 1
+            self.myPix()
 
     def timeChange(self):
         self.i += 1
